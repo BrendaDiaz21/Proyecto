@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de desecho de productos</title>
+    <link rel="stylesheet" href="css/f_desecho.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registrar desecho de productos</h2>
+        <form id="formDesechoProductos">
+            <div class="form-group">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="procedencia">Procedencia:</label>
+                <input type="text" id="procedencia" name="procedencia" placeholder="Ingrese la procedencia del producto" required>
+            </div>
+            <div class="form-group">
+                <label for="presentacion">Presentación:</label>
+                <input type="text" id="presentacion" name="presentacion" placeholder="Ingrese la presentación del producto" required>
+            </div>
+            <div class="form-group">
+                <label for="lote">Lote:</label>
+                <input type="text" id="lote" name="lote" placeholder="Ingrese el lote del producto" required>
+            </div>
+            <div class="form-group">
+                <label for="caducidad">Caducidad:</label>
+                <input type="date" id="caducidad" name="caducidad" required>
+            </div>
+            <div class="form-group">
+                <label for="formaDesecho">Forma de Desecho:</label>
+                <input type="text" id="formaDesecho" name="formaDesecho" placeholder="Ejemplo: Incineración, Compostaje" required>
+            </div>
+            <div class="form-group">
+                <label for="cantidad">Cantidad (kg):</label>
+                <input type="number" id="cantidad" name="cantidad" placeholder="Ingrese la cantidad en kilogramos" required>
+            </div>
+            <div class="form-group">
+                <label for="responsable">Responsable:</label>
+                <input type="text" id="responsable" name="responsable" placeholder="Nombre del responsable" required>
+            </div>
+            <button type="submit" class="btn">Registrar Desecho</button>
+        </form>
+    </div>
+</body>
+</html>

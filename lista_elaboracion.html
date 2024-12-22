@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de producción</title>
+    <link rel="stylesheet" href="css/list_elaboracion.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Lista de producción</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Producto</th>
+                    <th>Lote</th>
+                    <th>Proveedor</th>
+                    <th>N. Frascos</th>
+                    <th>Etiquetas</th>
+                    <th>Materias Primas (kg)</th>
+                    <th>Responsable</th>
+                    <th>Observaciones</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="false">2024-11-17</td>
+                    <td contenteditable="false">Mantequilla de Maní</td>
+                    <td contenteditable="false">L-001</td>
+                    <td contenteditable="false">Proveedor A</td>
+                    <td contenteditable="false">50</td>
+                    <td contenteditable="false">50</td>
+                    <td contenteditable="false">Cacahuate: 20, Estevia: 5</td>
+                    <td contenteditable="false">Juan Pérez</td>
+                    <td contenteditable="false">Ninguna</td>
+                    <td>
+                        <button class="edit-btn">Editar</button>
+                        <button class="save-btn" disabled>Guardar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">2024-11-18</td>
+                    <td contenteditable="false">Crema de Almendra</td>
+                    <td contenteditable="false">L-002</td>
+                    <td contenteditable="false">Proveedor B</td>
+                    <td contenteditable="false">30</td>
+                    <td contenteditable="false">30</td>
+                    <td contenteditable="false">Almendra: 15, Estevia: 3</td>
+                    <td contenteditable="false">María López</td>
+                    <td contenteditable="false">Revisión pendiente</td>
+                    <td>
+                        <button class="edit-btn">Editar</button>
+                        <button class="save-btn" disabled>Guardar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/lista_elaboracion.js"></script>
+</body>
+</html>

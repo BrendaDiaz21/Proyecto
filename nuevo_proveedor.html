@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de nuevo proveedor</title>
+    <link rel="stylesheet" href="css/nuevo_proveedor.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registro de nuevo proveedor</h2>
+        <form action="procesar_proveedor.php" method="POST">
+            <div class="form-group">
+                <label for="producto">Producto</label>
+                <input type="text" id="producto" name="producto" required placeholder="Ingresa el producto">
+            </div>
+            <div class="form-group">
+                <label for="proveedor">Nombre del Proveedor</label>
+                <input type="text" id="proveedor" name="proveedor" required placeholder="Ingresa el nombre del proveedor">
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion" required placeholder="Ingresa la dirección">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Ingresa el teléfono">
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" name="correo" required placeholder="Ingresa el correo">
+            </div>
+            <button type="submit">Registrar Proveedor</button>
+        </form>
+    </div>
+</body>
+</html>

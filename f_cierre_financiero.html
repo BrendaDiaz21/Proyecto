@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cierre de Inventarios</title>
+    <link rel="stylesheet" href="css/f_cierre_financiero.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario de cierre de inventarios</h2>
+        <form id="formCierreInventarios">
+            <!-- Datos generales -->
+            <fieldset>
+                <legend>Datos Generales</legend>
+                <div class="form-group">
+                    <label for="cliente">Cliente:</label>
+                    <input type="text" id="cliente" name="cliente" required>
+                </div>
+                <div class="form-group">
+                    <label for="producto">Producto:</label>
+                    <input type="text" id="producto" name="producto" required>
+                </div>
+                <div class="form-group">
+                    <label for="precioUnitario">Precio Unitario:</label>
+                    <input type="number" id="precioUnitario" name="precioUnitario" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="total">Total:</label>
+                    <input type="number" id="total" name="total" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="sistemaPago">Sistema de Pago:</label>
+                    <select id="sistemaPago" name="sistemaPago" required>
+                        <option value="">Seleccione</option>
+                        <option value="efectivo">Efectivo</option>
+                        <option value="tarjeta">Tarjeta</option>
+                        <option value="transferencia">Transferencia</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Gastos -->
+            <fieldset>
+                <legend>Gastos</legend>
+                <div class="form-group">
+                    <label for="gastos">Gastos Totales:</label>
+                    <input type="number" id="gastos" name="gastos" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="concepto">Concepto:</label>
+                    <input type="text" id="concepto" name="concepto" required>
+                </div>
+                <div class="form-group">
+                    <label for="proveedor">Proveedor:</label>
+                    <input type="text" id="proveedor" name="proveedor" required>
+                </div>
+                <div class="form-group">
+                    <label for="gastosAdmin">Gastos Administrativos:</label>
+                    <input type="number" id="gastosAdmin" name="gastosAdmin" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="autoVenta">Auto/Venta:</label>
+                    <input type="number" id="autoVenta" name="autoVenta" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="materiaPrima">Materia Prima:</label>
+                    <input type="number" id="materiaPrima" name="materiaPrima" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="limpieza">Limpieza:</label>
+                    <input type="number" id="limpieza" name="limpieza" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="inversion">Inversión:</label>
+                    <input type="number" id="inversion" name="inversion" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="insumos">Insumos:</label>
+                    <input type="number" id="insumos" name="insumos" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="fijos">Gastos Fijos:</label>
+                    <input type="number" id="fijos" name="fijos" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="gastosVenta">Gastos de Venta:</label>
+                    <input type="number" id="gastosVenta" name="gastosVenta" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="pagoCredito">Pago de Crédito:</label>
+                    <input type="number" id="pagoCredito" name="pagoCredito" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="mantEquipo">Mantenimiento de Equipo:</label>
+                    <input type="number" id="mantEquipo" name="mantEquipo" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="remuneracion">Remuneración:</label>
+                    <input type="number" id="remuneracion" name="remuneracion" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="otros">Otros Gastos:</label>
+                    <input type="number" id="otros" name="otros" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="totalGastos">Total de Gastos:</label>
+                    <input type="number" id="totalGastos" name="totalGastos" step="0.01" readonly>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn">Registrar Cierre</button>
+        </form>
+    </div>
+</body>
+</html>

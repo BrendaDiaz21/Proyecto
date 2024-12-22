@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Costos y Ganancia</title>
+    <link rel="stylesheet" href="css/f_costos.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario de Costos y Margen de ganancia</h2>
+        <form id="formCostos">
+            <div class="form-group">
+                <label for="nombreProducto">Nombre del Producto:</label>
+                <input type="text" id="nombreProducto" name="nombreProducto" required>
+            </div>
+            <div class="form-group">
+                <label for="tamano">Tamaño en Gramos (g):</label>
+                <input type="number" id="tamano" name="tamano" required>
+            </div>
+            <div class="form-group">
+                <label for="costoProduccion">Costo de Producción ($):</label>
+                <input type="number" id="costoProduccion" name="costoProduccion" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="costoVenta">Costo de Venta ($):</label>
+                <input type="number" id="costoVenta" name="costoVenta" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="diferencia">Margen de Ganancia ($):</label>
+                <input type="number" id="diferencia" name="diferencia" step="0.01" readonly>
+            </div>
+            <button type="button" id="calcular">Calcular Margen</button>
+            <button type="submit">Guardar Datos</button>
+        </form>
+    </div>
+
+    <script src="js/f_costos.js"></script>
+</body>
+</html>

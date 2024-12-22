@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuarios</title>
+    <link rel="stylesheet" href="css/lista_usuarios.css">
+</head>
+<body>
+    <header>
+        <h1>Buscador para Tabla</h1>
+    </header>
+    <main>
+        <section class="search-section">
+            <label for="searchInput" class="sr-only">Buscar en la tabla</label>
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Buscar en la tabla..." 
+                onkeyup="buscarEnTabla()" 
+                aria-label="Buscar usuarios registrados en la tabla">
+        </section>
+        <section class="container">
+            <h2>Lista de Usuarios Registrados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Correo Electrónico</th>
+                        <th>Contraseña</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>juan.perez@example.com</td>
+                        <td>***</td>
+                    </tr>
+                    <tr>
+                        <td>María López</td>
+                        <td>maria.lopez@example.com</td>
+                        <td>***</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Gómez</td>
+                        <td>carlos.gomez@example.com</td>
+                        <td>***</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="buttons">
+                <button id="edit-btn" aria-label="Editar usuarios">Editar</button>
+                <button id="save-btn" disabled aria-label="Guardar cambios">Guardar</button>
+            </div>
+        </section>
+    </main>
+    
+    
+    <script src="js/lista_usuarios.js"></script>
+</body>
+</html>

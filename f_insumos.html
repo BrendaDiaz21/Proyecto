@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de insumos</title>
+    <link rel="stylesheet" href="css/f_insumos.css">
+
+</head>
+<body>
+    <div class="container">
+        <h2>Registro de insumos</h2>
+        <form action="procesar_materias_primas.php" method="POST">
+            <div class="form-group">
+                <label for="materia_prima">Insumos</label>
+                <input type="text" id="materia_prima" name="materia_prima" required placeholder="Ingresa el insumo">
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="proveedor">Proveedor</label>
+                <input type="text" id="proveedor" name="proveedor" required placeholder="Ingresa el proveedor">
+            </div>
+            <div class="form-group">
+                <label for="entrada">Entrada (Cantidad)</label>
+                <input type="number" id="entrada" name="entrada" required placeholder="Ingresa la cantidad" min="1">
+            </div>
+            <div class="form-group">
+                <label for="costo">Costo</label>
+                <input type="number" id="costo" name="costo" required placeholder="Ingresa el costo" step="0.01" min="0">
+            </div>
+            <div class="form-group">
+                <label for="responsable">Responsable</label>
+                <input type="text" id="responsable" name="responsable" required placeholder="Ingresa el nombre del responsable">
+            </div>
+            <button type="submit">Registrar Materia Prima</button>
+        </form>
+    </div>
+</body>
+</html>

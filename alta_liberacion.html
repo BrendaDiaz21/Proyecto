@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta y Liberación de Productos</title>
+    <link rel="stylesheet" href="css/alta_liberacion.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Alta y Liberación de productos</h2>
+        <form action="procesar_alta_liberacion.php" method="POST">
+            <div class="form-group">
+                <label for="codigo">Código</label>
+                <input type="text" id="codigo" name="codigo" required placeholder="Código del producto">
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="producto">Producto</label>
+                <input type="text" id="producto" name="producto" required placeholder="Nombre del producto">
+            </div>
+            <div class="form-group">
+                <label for="lote">Lote</label>
+                <input type="text" id="lote" name="lote" required placeholder="Número de lote">
+            </div>
+            <div class="form-group">
+                <label for="color">Color</label>
+                <input type="text" id="color" name="color" required placeholder="Descripción del color">
+            </div>
+            <div class="form-group">
+                <label for="sabor">Sabor</label>
+                <input type="text" id="sabor" name="sabor" required placeholder="Descripción del sabor">
+            </div>
+            <div class="form-group">
+                <label for="aroma">Aroma</label>
+                <input type="text" id="aroma" name="aroma" required placeholder="Descripción del aroma">
+            </div>
+            <div class="form-group">
+                <label for="consistencia">Consistencia</label>
+                <input type="text" id="consistencia" name="consistencia" required placeholder="Descripción de la consistencia">
+            </div>
+            <div class="form-group">
+                <label for="calificacion">Calificación</label>
+                <select id="calificacion" name="calificacion" required>
+                    <option value="">Seleccione una calificación</option>
+                    <option value="Excelente">Excelente</option>
+                    <option value="Buena">Buena</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Deficiente">Deficiente</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="responsable">Responsable</label>
+                <input type="text" id="responsable" name="responsable" required placeholder="Nombre del responsable">
+            </div>
+            <button type="submit">Registrar Producto</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de clientes</title>
+    <link rel="stylesheet" href="css/tabla_clientes.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Lista de clientes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Dirección</th>
+                    <th>Nombre de la Empresa</th>
+                    <th>Correo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="clientesBody">
+                <tr>
+                    <td contenteditable="false">Juan Pérez</td>
+                    <td contenteditable="false">555-123-4567</td>
+                    <td contenteditable="false">Calle Principal #123</td>
+                    <td contenteditable="false">Empresa ABC</td>
+                    <td contenteditable="false">juan.perez@example.com</td>
+                    <td>
+                        <button class="edit-btn">Editar</button>
+                        <button class="save-btn" style="display: none;">Guardar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">María López</td>
+                    <td contenteditable="false">555-987-6543</td>
+                    <td contenteditable="false">Av. Secundaria #456</td>
+                    <td contenteditable="false">Compañía XYZ</td>
+                    <td contenteditable="false">maria.lopez@example.com</td>
+                    <td>
+                        <button class="edit-btn">Editar</button>
+                        <button class="save-btn" style="display: none;">Guardar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/tabla_clientes.js"></script>
+</body>
+</html>

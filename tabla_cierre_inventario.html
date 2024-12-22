@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cierre de Inventarios</title>
+    <link rel="stylesheet" href="css/tabla_cierre_inventario.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cierre de Inventarios</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Fecha</th>
+                    <th>Entrada (Cantidad)</th>
+                    <th>Salida (Cantidad)</th>
+                    <th>Lote</th>
+                    <th>Responsable</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="inventariosBody">
+                <tr>
+                    <td contenteditable="false">INV001</td>
+                    <td contenteditable="false">2024-11-18</td>
+                    <td contenteditable="false">100</td>
+                    <td contenteditable="false">50</td>
+                    <td contenteditable="false">L001</td>
+                    <td contenteditable="false">Juan Pérez</td>
+                    <td>
+                        <button class="edit-btn">Editar</button>
+                        <button class="save-btn" style="display: none;">Guardar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/tabla_cierre_inventario.js"></script>
+</body>
+</html>

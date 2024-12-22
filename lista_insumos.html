@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de insumos</title>
+    <link rel="stylesheet" href="css/lista_insumos.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Lista de insumos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Insumo</th>
+                    <th>Fecha</th>
+                    <th>Proveedor</th>
+                    <th>Entrada (Cantidad)</th>
+                    <th>Costo</th>
+                    <th>Responsable</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="false">Tapas</td>
+                    <td contenteditable="false">2024-11-01</td>
+                    <td contenteditable="false">Proveedor A</td>
+                    <td contenteditable="false">50</td>
+                    <td contenteditable="false">500.00</td>
+                    <td contenteditable="false">Juan Pérez</td>
+                    <td>
+                        <button class="edit-btn">Editar</button>
+                        <button class="save-btn" disabled>Guardar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Etiquetas</td>
+                    <td contenteditable="false">2024-11-10</td>
+                    <td contenteditable="false">Proveedor B</td>
+                    <td contenteditable="false">30</td>
+                    <td contenteditable="false">300.00</td>
+                    <td contenteditable="false">María López</td>
+                    <td>
+                        <button class="edit-btn">Editar</button>
+                        <button class="save-btn" disabled>Guardar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/lista_insumos.js"></script>
+</body>
+</html>

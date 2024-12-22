@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de proveedores</title>
+    <link rel="stylesheet" href="css/lista_proveedores.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Lista de proveedores</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Proveedor</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                    <th>Correo Electrónico</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="false">Café</td>
+                    <td contenteditable="false">Proveedor A</td>
+                    <td contenteditable="false">Calle 1</td>
+                    <td contenteditable="false">1234567890</td>
+                    <td contenteditable="false">proveedorA@example.com</td>
+                    <td>
+                        <button class="edit-btn">Editar</button>
+                        <button class="save-btn" disabled>Guardar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Azúcar</td>
+                    <td contenteditable="false">Proveedor B</td>
+                    <td contenteditable="false">Calle 2</td>
+                    <td contenteditable="false">0987654321</td>
+                    <td contenteditable="false">proveedorB@example.com</td>
+                    <td>
+                        <button class="edit-btn">Editar</button>
+                        <button class="save-btn" disabled>Guardar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/lista_proveedores.js"></script>
+</body>
+</html>

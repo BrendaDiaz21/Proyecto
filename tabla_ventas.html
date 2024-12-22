@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de ventas</title>
+    <link rel="stylesheet" href="css/tabla_ventas.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Lista de ventas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Fecha</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Total</th>
+                    <th>Responsable</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="ventasBody">
+                <tr>
+                    <td contenteditable="false">001</td>
+                    <td contenteditable="false">2024-11-18</td>
+                    <td contenteditable="false">Cacahuate</td>
+                    <td contenteditable="false">10</td>
+                    <td contenteditable="false">20.00</td>
+                    <td contenteditable="false">200.00</td>
+                    <td contenteditable="false">Juan Pérez</td>
+                    <td>
+                        <button class="edit-btn">Editar</button>
+                        <button class="save-btn" style="display: none;">Guardar</button>
+                    </td>
+                </tr>
+                <!-- Puedes agregar más filas como ejemplo -->
+            </tbody>
+        </table>
+    </div>
+    <script src="js/tabla_ventas.js"></script>
+</body>
+</html>

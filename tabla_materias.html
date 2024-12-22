@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de materias primas</title>
+    <link rel="stylesheet" href="css/tabla_materias.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Lista de materias primas</h2>
+        <table id="tablaMateriasPrimas">
+            <thead>
+                <tr>
+                    <th>Materias Primas</th>
+                    <th>Fecha</th>
+                    <th>Proveedor</th>
+                    <th>Entrada (Cantidad)</th>
+                  
+                    <th>Responsable</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Ejemplo de datos -->
+                <tr>
+                    <td contenteditable="false">Cacahuates</td>
+                    <td contenteditable="false">2024-11-18</td>
+                    <td contenteditable="false">Proveedor A</td>
+                    <td contenteditable="false">50 kg</td>
+                    <td contenteditable="false">Juan Pérez</td>
+                    <td>
+                        <button class="btn editar">Editar</button>
+                        <button class="btn guardar" disabled>Guardar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Estévia</td>
+                    <td contenteditable="false">2024-11-17</td>
+                    <td contenteditable="false">Proveedor B</td>
+                    <td contenteditable="false">50 kg</td>
+                    
+                    <td contenteditable="false">María López</td>
+                    <td>
+                        <button class="btn editar">Editar</button>
+                        <button class="btn guardar" disabled>Guardar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/tabla_materias.js"></script>
+</body>
+</html>

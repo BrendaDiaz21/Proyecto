@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de desechos</title>
+    <link rel="stylesheet" href="css/tabla_desechos.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Lista de desechos de productos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Procedencia</th>
+                    <th>Presentación</th>
+                    <th>Lote</th>
+                    <th>Caducidad</th>
+                    <th>Forma de Desecho</th>
+                    <th>Cantidad (kg)</th>
+                    <th>Responsable</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="desechosBody">
+                <tr>
+                    <td contenteditable="false">2024-11-18</td>
+                    <td contenteditable="false">Planta A</td>
+                    <td contenteditable="false">Envase de Vidrio</td>
+                    <td contenteditable="false">L1234</td>
+                    <td contenteditable="false">2025-01-01</td>
+                    <td contenteditable="false">Incineración</td>
+                    <td contenteditable="false">10</td>
+                    <td contenteditable="false">Juan Pérez</td>
+                    <td>
+                        <button class="edit-btn">Editar</button>
+                        <button class="save-btn" style="display: none;">Guardar</button>
+                        <button class="delete-btn">Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">2024-11-10</td>
+                    <td contenteditable="false">Planta B</td>
+                    <td contenteditable="false">Bolsa Plástica</td>
+                    <td contenteditable="false">L5678</td>
+                    <td contenteditable="false">2024-12-31</td>
+                    <td contenteditable="false">Reciclaje</td>
+                    <td contenteditable="false">5</td>
+                    <td contenteditable="false">María López</td>
+                    <td>
+                        <button class="edit-btn">Editar</button>
+                        <button class="save-btn" style="display: none;">Guardar</button>
+                        <button class="delete-btn">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/tabla_desechos.js"></script>
+</body>
+</html>

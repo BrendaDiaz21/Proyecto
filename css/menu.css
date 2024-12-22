@@ -1,0 +1,98 @@
+/* Estilos básicos para el menú */
+.menu-bar {
+    position: relative;
+    background-color: #4d2be7; /* Color de fondo del menú principal */
+    font-family: Arial, sans-serif;
+}
+
+.menu-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu-bar ul li {
+    position: relative;
+}
+
+.menu-bar ul li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para el botón de cerrar sesión */
+.menu-bar .logout-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #FF6347; /* Color de fondo para el botón de cerrar sesión */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo de los submenús */
+.menu-bar ul ul {
+    display: none; /* Oculta los submenús */
+    position: absolute;
+    top: 100%;
+    background-color: #444;
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 5px 0;
+}
+
+.menu-bar ul ul li {
+    display: block;
+}
+
+.menu-bar ul ul li a {
+    padding: 10px 20px;
+    color: white;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+/* Mostrar el submenú al hacer hover en el elemento principal */
+.menu-bar ul li:hover > ul {
+    display: block;
+}
+
+/* Opcional: Agregar un efecto al hacer hover sobre los enlaces */
+.menu-bar ul li a:hover,
+.menu-bar ul ul li a:hover,
+.menu-bar .logout-button:hover {
+    background-color: #555;
+}
+
+/* Estilo adicional para el menú superior en pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-bar ul {
+        flex-direction: column;
+    }
+
+    .menu-bar .logout-button {
+        position: relative;
+        margin: 10px auto;
+        right: auto;
+    }
+}
+body {
+    background-image: url('../images/616.jpg'); /* Ruta de la imagen */
+    background-size: contain; /* Ajusta la imagen para que quepa completamente */
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-position: center; /* Centra la imagen en el fondo */
+    font-family: Arial, sans-serif; /* Agrega un estilo de fuente opcional */
+    margin: 0; /* Elimina márgenes */
+    height: 100vh; /* Asegura que cubra toda la ventana */
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de materias primas</title>
+    <link rel="stylesheet" href="css/f_materias_primas.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registro de materias primas</h2>
+        <form action="procesar_materias_primas.php" method="POST">
+            <div class="form-group">
+                <label for="materia_prima">Materia Prima</label>
+                <input type="text" id="materia_prima" name="materia_prima" required placeholder="Ingresa la materia prima">
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="proveedor">Proveedor</label>
+                <input type="text" id="proveedor" name="proveedor" required placeholder="Ingresa el proveedor">
+            </div>
+            <div class="form-group">
+                <label for="entrada">Entrada (Cantidad)</label>
+                <input type="number" id="entrada" name="entrada" required placeholder="Ingresa la cantidad" min="1">
+            </div>
+            
+            <div class="form-group">
+                <label for="responsable">Responsable</label>
+                <input type="text" id="responsable" name="responsable" required placeholder="Ingresa el nombre del responsable">
+            </div>
+            <button type="submit">Registrar Materia Prima</button>
+        </form>
+    </div>
+</body>
+</html>
