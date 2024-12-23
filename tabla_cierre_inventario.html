@@ -5,8 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cierre de Inventarios</title>
     <link rel="stylesheet" href="css/tabla_cierre_inventario.css">
+    <link rel="stylesheet" href="css/menu.css"> <!-- Estilos del menú -->
 </head>
 <body>
+    <!-- Barra de menú superior -->
+   <header class="menu-bar">
+
+    <nav>
+      <ul>
+        <li><a href="#Usuarios">Usuarios</a>
+          <ul>
+          
+
+            <li><a href="f_usuarios.html">Nuevo Usuario</a></li>
+            
+            <li><a href="lista_usuarios.html">Lista de usuarios</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="#Proveedores">Proveedores</a>
+          <ul>
+            <li><a href="nuevo_proveedor.html">Nuevo Proveedor</a></li>
+            <li><a href="lista_proveedores.html">Lista de Proveedores</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="#Materias">Materias</a>
+          <ul>
+            <li><a href="f_materias_primas.html">Materias Primas</a></li>
+            <li><a href="tabla_materias.html">Lista de materias primas</a></li>
+            <li><a href="f_insumos.html">Nuevo insumo</a></li>
+            <li><a href="lista_insumos.html">Lista de insumos</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="#Observaciones">Revisión</a>
+          <ul>
+            <li><a href="f_observaciones.html">Revisión de entrada  de materias primas</a></li>
+            <li><a href="lista_observaciones.html">Lista de revisones</a></li>
+            
+          </ul>
+        </li>
+        
+        <li><a href="#Producción">Producción</a>
+          <ul>
+          
+            <li><a href="fcrema_clasica_azucar.html">Crema clasica con azucar</a></li>
+            <li><a href="fcrema_cacao.html">Crema clasica con cacao</a></li>
+            <li><a href="fcrema_natutal.html">Crema natural sin azucar</a></li>
+            <li><a href="fcrema_stevia.html">Crema con stevia </a></li>
+            <li><a href="fcrema_nibs.html">Crema clasica con nibs</a></li>
+            <li><a href="fmazapan_miel.html">Mazapan con miel</a></li>
+            <li><a href="fmazapan_nibs.html">Mazapan con nibs</a></li>
+            <li><a href="fcacahuate_bolsa.html">Bolsa</a></li>
+            <li><a href="tabla_produccion.html">Tabla de Producción</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="#AltaLiberacion">Alta y Liberación</a>
+          <ul>
+            <li><a href="alta_liberacion.html">Alta de Producto</a></li>
+            <li><a href="lista_alta_liberacion.html">Lista de alta y Liberación</a></li>
+            <li><a href="f_cierre_inventarios.html">Cierre de Inventarios</a></li>
+            <li><a href="tabla_cierre_inventario.html">Cierre de Inventarios</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="#Ventas">Ventas</a>
+          <ul>
+            <li><a href="formulario_ventas.html">Nueva Venta</a></li>
+            <li><a href="tabla_ventas.html">Lista de Ventas</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#Clientes">Clientes</a>
+          <ul>
+            <li><a href="f_clientes.html">Nuevo cliente</a></li>
+            <li><a href="tabla_clientes.html">Lista de clientes</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="#Costos">Costos</a>
+          <ul>
+            <li><a href="f_costos.html">Costos de Producción</a></li>
+            <li><a href="tabla_costos.html">Lista de costos</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="#Desechos">Caducados</a>
+          <ul>
+            <li><a href="f_desechos.html">Nuevo Desecho</a></li>
+            <li><a href="tabla_desechos.html">Lista de Desechos</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="#CierreFinanciero">Gastos</a>
+          <ul>
+            <li><a href="f_cierre_financiero.html">Nuevos gastos</a></li>
+            <li><a href="tabla_cierre_financiero.html">Lista de gastos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    
+    <!-- Botón de cierre de sesión -->
+    <a href="#" class="logout-button" onclick="cerrarSesion()">Cerrar Sesión</a>
+
+  </header>
+  
     <div class="container">
         <h1>Cierre de Inventarios</h1>
         <table>
@@ -38,5 +144,6 @@
         </table>
     </div>
     <script src="js/tabla_cierre_inventario.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>

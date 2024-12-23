@@ -1,8 +1,12 @@
 /* Estilos básicos para el menú */
 .menu-bar {
-    position: relative;
+    position: fixed; /* Fija el menú en la parte superior */
+    top: 0;
+    width: 100%; /* Asegura que ocupe el ancho completo de la pantalla */
     background-color: #4d2be7; /* Color de fondo del menú principal */
     font-family: Arial, sans-serif;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para separar visualmente */
 }
 
 .menu-bar ul {
@@ -10,6 +14,8 @@
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center; /* Opcional: Cambia el espaciado entre los elementos */
+    gap: 10px; /* Espaciado personalizado entre elementos */
 }
 
 .menu-bar ul li {
@@ -19,7 +25,7 @@
 .menu-bar ul li a {
     display: block;
     color: white;
-    padding: 15px 20px;
+    padding: 10px 15px; /* Rellena menos espacio horizontal y vertical */
     text-decoration: none;
     font-size: 16px;
     transition: background-color 0.3s ease;
@@ -68,17 +74,18 @@
     display: block;
 }
 
-/* Opcional: Agregar un efecto al hacer hover sobre los enlaces */
+/* Efectos de hover */
 .menu-bar ul li a:hover,
 .menu-bar ul ul li a:hover,
 .menu-bar .logout-button:hover {
     background-color: #555;
 }
 
-/* Estilo adicional para el menú superior en pantallas pequeñas */
+/* Ajustes responsivos para pantallas pequeñas */
 @media (max-width: 768px) {
     .menu-bar ul {
         flex-direction: column;
+        gap: 5px; /* Reduce aún más el espacio en pantallas pequeñas */
     }
 
     .menu-bar .logout-button {
@@ -87,12 +94,18 @@
         right: auto;
     }
 }
+
+/* Ajustes para el contenido principal */
+main {
+    margin-top: 70px; /* Espacio debajo del menú fijo */
+    padding: 20px;
+}
+
+/* Fondo de la página */
 body {
     background-image: url('../images/616.jpg'); /* Ruta de la imagen */
     background-size: contain; /* Ajusta la imagen para que quepa completamente */
     background-repeat: no-repeat; /* Evita que se repita */
     background-position: center; /* Centra la imagen en el fondo */
-    font-family: Arial, sans-serif; /* Agrega un estilo de fuente opcional */
-    margin: 0; /* Elimina márgenes */
     height: 100vh; /* Asegura que cubra toda la ventana */
 }

@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de nuevo proveedor</title>
-    <link rel="stylesheet" href="css/nuevo_proveedor.css">
-    <link rel="stylesheet" href="css/menu.css">
+    <title>Formulario de Embolsado</title>
+    <link rel="stylesheet" href="css/fcacahuate_bolsa.css">
+    <link rel="stylesheet" href="css/menu.css"> <!-- Estilos del menú -->
+  
 </head>
 <body>
-      <!-- Barra de menú superior -->
-  <header class="menu-bar">
+    <!-- Barra de menú superior -->
+   <header class="menu-bar">
 
     <nav>
       <ul>
@@ -112,33 +113,48 @@
     <a href="#" class="logout-button" onclick="cerrarSesion()">Cerrar Sesión</a>
 
   </header>
+  
     <div class="container">
-        <h2>Registro de nuevo proveedor</h2>
-        <form action="procesar_proveedor.php" method="POST">
+        <h1>Formulario de embolsado</h1>
+        <form action="#" method="post">
             <div class="form-group">
-                <label for="producto">Producto</label>
-                <input type="text" id="producto" name="producto" required placeholder="Ingresa el producto">
+                <label for="tipoCacahuate">Tipo de cacahuate</label>
+                <select id="tipoCacahuate" name="tipoCacahuate" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="enchilado">Cacahuate enchilado</option>
+                    <option value="natural">Cacahuate natural</option>
+                    <option value="garapiñado">Cacahuate garapiñado dulce</option>
+                    <option value="salado">Cacahuate con sal y limon</option>
+                    <option value="salado">Cacahuate español</option>
+                    <option value="salado">Cacahuate garapiñado picante</option>
+                    <option value="salado">Nibs de cacao</option>
+                    <option value="salado">cacao en polvo</option>
+                </select>
             </div>
             <div class="form-group">
-                <label for="proveedor">Nombre del Proveedor</label>
-                <input type="text" id="proveedor" name="proveedor" required placeholder="Ingresa el nombre del proveedor">
+                <label for="presentacion">Presentación</label>
+                <select id="presentacion" name="presentacion" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="150g">150g</option>
+                    <option value="250g">250g</option>
+                    <option value="1kg">1kg</option>
+                </select>
             </div>
             <div class="form-group">
-                <label for="direccion">Dirección</label>
-                <input type="text" id="direccion" name="direccion" required placeholder="Ingresa la dirección">
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" placeholder="Ingrese la cantidad" required>
             </div>
             <div class="form-group">
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" required placeholder="Ingresa el teléfono">
+                <label for="fecha">Fecha de embolsado</label>
+                <input type="date" id="fecha" name="fecha" required>
             </div>
             <div class="form-group">
-                <label for="correo">Correo Electrónico</label>
-                <input type="email" id="correo" name="correo" required placeholder="Ingresa el correo">
+                <label for="responsable">Responsable</label>
+                <input type="text" id="responsable" name="responsable" placeholder="Nombre del responsable" required>
             </div>
-            <button type="submit">Registrar Proveedor</button>
+            <button type="submit">Registrar</button>
         </form>
     </div>
     <script src="js/menu.js"></script>
-
 </body>
 </html>
